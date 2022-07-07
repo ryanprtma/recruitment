@@ -11,6 +11,12 @@ class Task extends Model
 
     protected $fillable = [
         'user',
-        'task'
+        'task',
+        'kategori_id'
     ];
+
+    public function kategori()
+    {
+        return $this->belongsTo(\App\Models\Kategori::class);
+    }
 }

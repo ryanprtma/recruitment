@@ -49,7 +49,8 @@ class TaskController extends Controller
     public function store(TaskRequest $request){
         Task::create([
             'task' => $request->task,
-            'user'=> $request->user
+            'user'=> $request->user,
+            'kategori_id' => $request->kategori_id
         ]);
 
         return redirect('/tasks');
