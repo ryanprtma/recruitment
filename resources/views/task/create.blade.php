@@ -23,6 +23,12 @@
                     <label for="" class="form-label">Task</label>
                     <textarea name="task" class="form-control" id="" rows="3">{{ old('task') }}</textarea>
                 </div>
+                <select name="kategori_id" class="form-control my-2"l> <br>
+                    <option selected>Kategori</option>
+                    <option value="1">Kerja</option>
+                    <option value="2">Belajar</option>
+                    <option value="3">Personal</option>
+                </select>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
